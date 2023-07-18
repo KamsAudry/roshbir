@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>hello World</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="text">
+                <h1>Happy Birthday!</h1>
+                <br>
+                <p>Dear <b>ROSHANAK</b>,
+                    I am very grateful for the unbreakable bond we share in oyour friendship
+                    and really glad to know someone special like u.
+                    All i'm wishing you today as remarkable milestone day is to find a purpose and fulfillment in every
+                    daily steps u are taking
+                    as talented , smarter one and beautiful baby girl.
+                    May u possess the courage and resilience to embrace change and grow.
+                    Shining brightly, embracing your uniqueness, bringing love , smile , peace , happiness around u and
+                    may your wishes be granted.
+                </p>
+                <p class="muted">- Jonah Lawrence</p>
+                <img class="img"
+                    src="./Black_and_white_tree_illustration__Tree_Oak_Drawing_Silhouette__Trees_silhouette__watercolor_Painting__pencil__leaf_png-removebg-preview.png"
+                    alt="" style="background-color: transparent; width: 30%;">
+                <img class="img_two"
+                    src="./Flower_PNG_Transparent__Flowers__Peony__Painted_PNG_Image_For_Free_Download-removebg-preview.png"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <script src="./confetti.js"></script>
+    <!-- Confetti  JS-->
+    <script>
+
+        // start
+
+        const start = () => {
+            setTimeout(function () {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+
+        //  Stop
+
+        const stop = () => {
+            setTimeout(function () {
+                confetti.stop()
+            }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+
+        start();
+        stop();
+    </script>
+</body>
+
+</html>
