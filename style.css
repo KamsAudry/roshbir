@@ -9,14 +9,17 @@
 
 body {
   background-color: #cdb4db;
-  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
 }
 
 .container {
   max-width: 40%;
   min-height: 40vh;
-  margin: 0 auto;
-  margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,16 +36,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1em;
+
 }
 
 .text {
   width: 60%;
   position: relative;
+  overflow: hidden;
+ 
 }
 .text h1 {
   font-size: 4rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .text p {
@@ -62,6 +67,7 @@ body {
   top: 0;
   right: -70px;
   z-index: -1; 
+  width: 35%;
 }
 
 .img_two {
@@ -70,38 +76,118 @@ body {
   left: -29%;
   z-index: -1; /* Set z-index to -1 to move the image behind the text */
   transform: rotate(360deg);
+  width: 35%;
 }
 
 @media only screen and (max-width: 1024px) {
+  .container {
+    max-width: unset;
+    width: 100%;
+    min-height: 40vh;
+  }
   .text {
-    width: 80%;
+    width: 100%;
+    
   }
 
   .img {
-    display: none;
+    position: absolute;
+    top: -52%;
+    right: -10px;
+    z-index: -1; 
+    width: 15%;
   }
 
   .img_two {
-    display: none;
+    position: absolute;
+    bottom: -95%;
+    left: -6%;
+    z-index: -1; /* Set z-index to -1 to move the image behind the text */
+    transform: unset;
+    width: 15%;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .text {
-    width: 90%;
+    .container {
+      max-width: unset;
+      width: 100%;
+      min-height: 40vh;
+    }
+    .text {
+      width: 100%;
+    }
+  
+    .img {
+      position: absolute;
+      top: -52%;
+      right: -10px;
+      z-index: -1; 
+      width: 15%;
+    }
+  
+    .img_two {
+      position: absolute;
+      bottom: -40%;
+      left: -1.5%;
+      z-index: -1; /* Set z-index to -1 to move the image behind the text */
+      transform: unset;
+      width: 15%;
+    }
   }
-}
+  @media only screen and (max-width: 425px) {
+    .container {
+      max-width: unset;
+      width: 100%;
+      min-height: 40vh;
+    }
+    .text {
+      width: 100%;
+    }
+  
+    .img {
+      position: absolute;
+      top: -10%;
+      right: -10px;
+      z-index: -1; 
+      width: 35%;
+    }
+  
+    .img_two {
+      position: absolute;
+      bottom: -15%;
+      left: -15%;
+      z-index: -1; /* Set z-index to -1 to move the image behind the text */
+      transform: unset;
+      width: 35%;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .container {
+      max-width: unset;
+      width: 100%;
+      min-height: 40vh;
+      padding-top: 9rem;
+    }
+    .text {
+      width: 100%;
+    }
+  
+    .img {
+      position: absolute;
+      top: -10%;
+      right: -10px;
+      z-index: -1; 
+      width: 35%;
+    }
+  
+    .img_two {
+      position: absolute;
+      bottom: -15%;
+      left: -15%;
+      z-index: -1; /* Set z-index to -1 to move the image behind the text */
+      transform: unset;
+      width: 35%;
+    }
+  }
 
-@media only screen and (max-width: 425px) {
-  .text {
-    width: 100%;
-  }
-  
-.card {
-  padding-top: 20rem;
-  
-}
-.text h1 {
-  padding-bottom: unset;
-}
-}
