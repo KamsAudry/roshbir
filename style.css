@@ -24,12 +24,14 @@ body {
   justify-content: center;
   background-color: #fff;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
 }
 
 .card {
   border-radius: 9px;
   min-height: 500px;
   width: 100%;
+  height: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -38,7 +40,8 @@ body {
 }
 
 .text {
-  width: 60%;
+  width: 100%;
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -61,7 +64,7 @@ body {
 
 .img {
   position: absolute;
-  top: 0;
+  top: -70%;
   right: -70px;
   z-index: -1;
   width: 35%;
@@ -69,8 +72,8 @@ body {
 
 .img_two {
   position: absolute;
-  bottom: -10%;
-  left: -29%;
+  bottom: -53%;
+  left: -22%;
   z-index: -1; /* Set z-index to -1 to move the image behind the text */
   transform: rotate(360deg);
   width: 35%;
@@ -85,7 +88,10 @@ body {
   .text {
     width: 100%;
   }
-
+  .text h1 {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+  }
   .img {
     position: absolute;
     top: -52%;
@@ -96,7 +102,7 @@ body {
 
   .img_two {
     position: absolute;
-    bottom: -95%;
+    bottom: -55%;
     left: -6%;
     z-index: -1; /* Set z-index to -1 to move the image behind the text */
     transform: unset;
@@ -136,12 +142,14 @@ body {
     max-width: unset;
     width: 100%;
     min-height: 40vh;
-    padding-top: 12rem;
   }
   .text {
     width: 100%;
   }
-
+  .text h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
   .img {
     position: absolute;
     top: -10%;
@@ -164,12 +172,15 @@ body {
     max-width: unset;
     width: 100%;
     min-height: 40vh;
-    padding-top: 9rem;
+    padding-top: 2rem;
   }
   .text {
     width: 100%;
   }
-
+  .text h1 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
   .img {
     position: absolute;
     top: -10%;
